@@ -13,7 +13,7 @@ const ReposList = () =>{
 
     return(
         <ul>
-            {repos.map(repositorio => (
+            {Response.length > 0 && repos.map(repositorio => (
                 <li key={repositorio.id}>
                     <b>Nome:</b> {repositorio.name}
                     <b>Linguagem:</b> {repositorio.language}
